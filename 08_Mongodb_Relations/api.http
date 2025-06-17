@@ -1,0 +1,15 @@
+GET http://localhost:3001/api/books
+
+###
+
+POST http://localhost:3001/api/books
+Content-Type: application/json
+
+{
+  "title": "Harry Potter and the Deathly Hollows",
+  "isbn": "HARRYPOTTER2",
+  "author": {
+    "name": "J. K. Rowling",
+    "age": 45
+  }
+}
