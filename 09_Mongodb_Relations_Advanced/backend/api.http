@@ -1,0 +1,5 @@
+GET http://localhost:3000/api/movies
+
+
+###
+GET http://localhost:3000/api/movies?includeComments=true
