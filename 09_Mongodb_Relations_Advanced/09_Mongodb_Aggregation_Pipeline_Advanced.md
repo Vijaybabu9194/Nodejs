@@ -98,12 +98,12 @@ db.orders.aggregate([
 
 ```mermaid
 graph TD;
-    A[Start] --> B[$match: { status: "completed" }];
-    B --> C[$lookup: Join with products];
-    C --> D[$unwind: Product Details];
-    D --> E[$group: Group by customerId];
-    E --> F[$project: Customer details and totalSpent];
-    F --> G[$sort: Sort by totalSpent];
+    A[Start] --> B["\$match: { status: 'completed' }"];
+    B --> C["\$lookup: Join with products"];
+    C --> D["\$unwind: Product Details"];
+    D --> E["\$group: Group by customerId"];
+    E --> F["\$project: Customer details and totalSpent"];
+    F --> G["\$sort: Sort by totalSpent"];
     G --> H[End];
 ```
 
